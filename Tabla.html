@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            height: 500px;
+        }
+        #table{
+            background-color: aqua;
+            width: 300px;
+            height: 200px;
+        }
+        .container{
+            display: grid;
+            gap: 5px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+          var i=1;
+            function enviar(){
+                document.getElementById("entrada").placeholder = "Casilla " + (i+1);
+                // entrada.placeholder = "Casilla " + (i+1);
+                var dato = document.getElementById("entrada").value;
+                if(i==1){
+                    cas_1.textContent = dato;
+                    i++;
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                }
+                else if(i==2){
+                    cas_2.textContent = dato;
+                    i++;
+                    entrada.value = 
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                }
+                else if(i==3){
+                    cas_3.textContent = dato;
+                    i++;
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                }
+                else if(i==4){
+                    cas_4.textContent = dato;
+                    i++;
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                }
+                else if(i==5){
+                    cas_5.textContent = dato;
+                    i++;
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                }
+                else if(i==6){
+                    cas_6.textContent = dato;
+                    i++;
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                }
+                else if(i==7){
+                    cas_7.textContent = dato;
+                    i++;
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                }
+                else if(i==8){
+                    cas_8.textContent = dato;
+                    i++;
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                }
+                else if(i==9){
+                    cas_9.textContent = dato;
+                    i=1;
+                    document.getElementById("entrada").value = "";
+                    document.getElementById("entrada").focus();
+                    entrada.placeholder = "Casilla " + (i);
+                }
+        }
+    </script>
+    <div class="container">
+        <label for=""> Digite los caracteres: </label>
+        <input type="text" name="" id="entrada" size="8" placeholder="Casilla 1">
+        <button onclick="enviar()">Asignar</button>
+        <table border="2" id="table">
+            <tr>
+                <td id="cas_1"></td>
+                <td id="cas_2"></td>
+                <td id="cas_3"></td>
+            </tr>
+            <tr>
+                <td id="cas_4"></td>
+                <td id="cas_5"></td>
+                <td id="cas_6"></td>
+            </tr>
+            <tr>
+                <td id="cas_7"></td>
+                <td id="cas_8"></td>
+                <td id="cas_9"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
