@@ -20,7 +20,7 @@
         .container{
             display: grid;
             gap: 5px;
-
+-
         }
 
     </style>
@@ -28,6 +28,9 @@
 <body>
     <script>
           var i=1;
+        function enter(){
+            alert("Clickea gil")
+        }
             function enviar(){
                 document.getElementById("entrada").placeholder = "Casilla " + (i+1);
                 // entrada.placeholder = "Casilla " + (i+1);
@@ -41,7 +44,7 @@
                 else if(i==2){
                     cas_2.textContent = dato;
                     i++;
-                    entrada.value = 
+                    entrada.value = "";
                     document.getElementById("entrada").value = "";
                     document.getElementById("entrada").focus();
                 }
@@ -92,7 +95,7 @@
     </script>
     <div class="container">
         <label for=""> Digite los caracteres: </label>
-        <input type="text" name="" id="entrada" size="8" placeholder="Casilla 1">
+        <input type="text" name="" id="entrada" size="8" placeholder="Casilla 1" onkeypress="enter()">
         <button onclick="enviar()">Asignar</button>
         <table border="2" id="table">
             <tr>
